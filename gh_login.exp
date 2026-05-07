@@ -1,0 +1,9 @@
+spawn gh auth login --hostname github.com --git-protocol https --web
+expect -re "Authenticate Git.*"
+send "Y\r"
+expect -re {([A-Z0-9]{4}-[A-Z0-9]{4})} {
+    set code $expect_out(1,string)
+    puts "\n\n=== CODE POUR LE USER: $code ===\n\n"
+}
+expect "Press Enter to open github.com in your browser"
+interact

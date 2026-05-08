@@ -4,7 +4,7 @@
 
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <dossier_source_local> <nom_du_bucket_r2>"
-    echo "Exemple: $0 \"/Volumes/X10 Pro/VISAGE D'ATMA/0-PRODUCTION/Synchroniques\" feelprod-damoiseaux"
+    echo "Exemple: $0 \"/Volumes/1 TERA NOIR/1-VISAGE D'ATMA/0-PRODUCTION/Synchroniques\" feelprod-damoiseaux"
     exit 1
 fi
 
